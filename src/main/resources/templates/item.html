@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>An Item</title>
+</head>
+
+<body>
+
+	<header>
+		<h1> An Item </h1>
+	</header>
+
+	<div>
+		<h2 th:text="${singleItemKey.getName()}"></h2>
+		<h2 th:text="${singleItemKey.brand}"></h2>
+		<h2 th:text="${singleItemKey.price}"></h2>
+		<h2 th:text="${singleItemKey.quantity}"></h2>
+		
+		<a href="http://localhost:8080/itemList">Back to home</a>
+	</div>
+
+</body>
+</html>
